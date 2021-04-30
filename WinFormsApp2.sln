@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp2", "WinFormsApp2.csproj", "{D5B27816-33F9-4E53-96FC-FF5204C44A8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5B27816-33F9-4E53-96FC-FF5204C44A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B27816-33F9-4E53-96FC-FF5204C44A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B27816-33F9-4E53-96FC-FF5204C44A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B27816-33F9-4E53-96FC-FF5204C44A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F11DD3B9-898D-4195-BDD1-18FB50DB5E35}
+	EndGlobalSection
+EndGlobal
