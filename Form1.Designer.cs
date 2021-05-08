@@ -29,6 +29,7 @@ namespace WinFormsApp2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CalculatorDisplay = new System.Windows.Forms.RichTextBox();
             this.Button_7 = new System.Windows.Forms.Button();
             this.Button_8 = new System.Windows.Forms.Button();
@@ -56,7 +57,7 @@ namespace WinFormsApp2
             this.CalculatorDisplay.Location = new System.Drawing.Point(12, 12);
             this.CalculatorDisplay.Name = "CalculatorDisplay";
             this.CalculatorDisplay.Size = new System.Drawing.Size(366, 96);
-            this.CalculatorDisplay.TabIndex = 0;
+            this.CalculatorDisplay.TabIndex = 20;
             this.CalculatorDisplay.Text = "";
             // 
             // Button_7
@@ -288,6 +289,7 @@ namespace WinFormsApp2
             this.Controls.Add(this.Button_8);
             this.Controls.Add(this.Button_7);
             this.Controls.Add(this.CalculatorDisplay);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);
