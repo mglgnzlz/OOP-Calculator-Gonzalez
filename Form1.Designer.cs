@@ -30,7 +30,6 @@ namespace WinFormsApp2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.CalculatorDisplay = new System.Windows.Forms.RichTextBox();
             this.Button_7 = new System.Windows.Forms.Button();
             this.Button_8 = new System.Windows.Forms.Button();
             this.Button_9 = new System.Windows.Forms.Button();
@@ -50,15 +49,8 @@ namespace WinFormsApp2
             this.Button_EmptySelection = new System.Windows.Forms.Button();
             this.Button_DeleteInp = new System.Windows.Forms.Button();
             this.Button_Equals = new System.Windows.Forms.Button();
+            this.CalculatorDisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // CalculatorDisplay
-            // 
-            this.CalculatorDisplay.Location = new System.Drawing.Point(12, 12);
-            this.CalculatorDisplay.Name = "CalculatorDisplay";
-            this.CalculatorDisplay.Size = new System.Drawing.Size(366, 96);
-            this.CalculatorDisplay.TabIndex = 20;
-            this.CalculatorDisplay.Text = "";
             // 
             // Button_7
             // 
@@ -279,12 +271,21 @@ namespace WinFormsApp2
             this.Button_Equals.UseVisualStyleBackColor = true;
             this.Button_Equals.Click += new System.EventHandler(this.Button_Equals_Click);
             // 
+            // CalculatorDisplay
+            // 
+            this.CalculatorDisplay.Location = new System.Drawing.Point(12, 22);
+            this.CalculatorDisplay.Multiline = true;
+            this.CalculatorDisplay.Name = "CalculatorDisplay";
+            this.CalculatorDisplay.Size = new System.Drawing.Size(366, 86);
+            this.CalculatorDisplay.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(390, 441);
+            this.Controls.Add(this.CalculatorDisplay);
             this.Controls.Add(this.Button_Equals);
             this.Controls.Add(this.Button_DeleteInp);
             this.Controls.Add(this.Button_EmptySelection);
@@ -304,17 +305,15 @@ namespace WinFormsApp2
             this.Controls.Add(this.Button_9);
             this.Controls.Add(this.Button_8);
             this.Controls.Add(this.Button_7);
-            this.Controls.Add(this.CalculatorDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox CalculatorDisplay;
         private System.Windows.Forms.Button Button_7;
         private System.Windows.Forms.Button Button_8;
         private System.Windows.Forms.Button Button_9;
@@ -334,6 +333,7 @@ namespace WinFormsApp2
         private System.Windows.Forms.Button Button_EmptySelection;
         private System.Windows.Forms.Button Button_DeleteInp;
         private System.Windows.Forms.Button Button_Equals;
+        private System.Windows.Forms.TextBox CalculatorDisplay;
     }
 }
 

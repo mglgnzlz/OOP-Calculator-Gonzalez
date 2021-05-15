@@ -96,6 +96,6 @@ namespace WinFormsApp2
         {
 
         }
-          
+
     }
 }
