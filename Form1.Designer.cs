@@ -83,6 +83,7 @@ namespace WinFormsApp2
             this.Button_8.TabIndex = 8;
             this.Button_8.Text = "8";
             this.Button_8.UseVisualStyleBackColor = false;
+            this.Button_8.Click += new System.EventHandler(this.Button_8_Click);
             // 
             // Button_9
             // 
@@ -94,6 +95,7 @@ namespace WinFormsApp2
             this.Button_9.TabIndex = 9;
             this.Button_9.Text = "9";
             this.Button_9.UseVisualStyleBackColor = false;
+            this.Button_9.Click += new System.EventHandler(this.Button_9_Click);
             // 
             // Button_4
             // 
@@ -105,6 +107,7 @@ namespace WinFormsApp2
             this.Button_4.TabIndex = 4;
             this.Button_4.Text = "4";
             this.Button_4.UseVisualStyleBackColor = false;
+            this.Button_4.Click += new System.EventHandler(this.Button_4_Click);
             // 
             // Button_5
             // 
@@ -116,6 +119,7 @@ namespace WinFormsApp2
             this.Button_5.TabIndex = 5;
             this.Button_5.Text = "5";
             this.Button_5.UseVisualStyleBackColor = false;
+            this.Button_5.Click += new System.EventHandler(this.Button_5_Click);
             // 
             // Button_6
             // 
@@ -127,6 +131,7 @@ namespace WinFormsApp2
             this.Button_6.TabIndex = 6;
             this.Button_6.Text = "6";
             this.Button_6.UseVisualStyleBackColor = false;
+            this.Button_6.Click += new System.EventHandler(this.Button_6_Click);
             // 
             // Button_1
             // 
@@ -150,6 +155,7 @@ namespace WinFormsApp2
             this.Button_2.TabIndex = 2;
             this.Button_2.Text = "2";
             this.Button_2.UseVisualStyleBackColor = false;
+            this.Button_2.Click += new System.EventHandler(this.Button_2_Click);
             // 
             // Button_3
             // 
@@ -161,7 +167,7 @@ namespace WinFormsApp2
             this.Button_3.TabIndex = 3;
             this.Button_3.Text = "3";
             this.Button_3.UseVisualStyleBackColor = false;
-            this.Button_3.Click += new System.EventHandler(this.button9_Click);
+            this.Button_3.Click += new System.EventHandler(this.Button_3_Click);
             // 
             // Button_0
             // 
@@ -172,7 +178,7 @@ namespace WinFormsApp2
             this.Button_0.TabIndex = 0;
             this.Button_0.Text = "0";
             this.Button_0.UseVisualStyleBackColor = true;
-            this.Button_0.Click += new System.EventHandler(this.button10_Click);
+            this.Button_0.Click += new System.EventHandler(this.Button_0_Click);
             // 
             // Button_Dot
             // 
@@ -183,7 +189,7 @@ namespace WinFormsApp2
             this.Button_Dot.TabIndex = 11;
             this.Button_Dot.Text = ",";
             this.Button_Dot.UseVisualStyleBackColor = true;
-            this.Button_Dot.Click += new System.EventHandler(this.button11_Click);
+            this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
             // 
             // Button_Add
             // 
@@ -194,6 +200,7 @@ namespace WinFormsApp2
             this.Button_Add.TabIndex = 12;
             this.Button_Add.Text = "+";
             this.Button_Add.UseVisualStyleBackColor = true;
+            this.Button_Add.Click += new System.EventHandler(this.Button_Add_Click);
             // 
             // Button_Subtract
             // 
@@ -204,6 +211,7 @@ namespace WinFormsApp2
             this.Button_Subtract.TabIndex = 13;
             this.Button_Subtract.Text = "-";
             this.Button_Subtract.UseVisualStyleBackColor = true;
+            this.Button_Subtract.Click += new System.EventHandler(this.Button_Subtract_Click);
             // 
             // Button_Divide
             // 
@@ -214,6 +222,7 @@ namespace WinFormsApp2
             this.Button_Divide.TabIndex = 14;
             this.Button_Divide.Text = "/";
             this.Button_Divide.UseVisualStyleBackColor = true;
+            this.Button_Divide.Click += new System.EventHandler(this.Button_Divide_Click);
             // 
             // Button_Multiply
             // 
@@ -224,6 +233,7 @@ namespace WinFormsApp2
             this.Button_Multiply.TabIndex = 15;
             this.Button_Multiply.Text = "*";
             this.Button_Multiply.UseVisualStyleBackColor = true;
+            this.Button_Multiply.Click += new System.EventHandler(this.Button_Multiply_Click);
             // 
             // Button_ClearEntry
             // 
@@ -234,6 +244,7 @@ namespace WinFormsApp2
             this.Button_ClearEntry.TabIndex = 16;
             this.Button_ClearEntry.Text = "CE";
             this.Button_ClearEntry.UseVisualStyleBackColor = true;
+            this.Button_ClearEntry.Click += new System.EventHandler(this.Button_ClearEntry_Click);
             // 
             // Button_EmptySelection
             // 
@@ -244,6 +255,7 @@ namespace WinFormsApp2
             this.Button_EmptySelection.TabIndex = 17;
             this.Button_EmptySelection.Text = "E";
             this.Button_EmptySelection.UseVisualStyleBackColor = true;
+            this.Button_EmptySelection.Click += new System.EventHandler(this.Button_EmptySelection_Click);
             // 
             // Button_DeleteInp
             // 
@@ -254,6 +266,7 @@ namespace WinFormsApp2
             this.Button_DeleteInp.TabIndex = 18;
             this.Button_DeleteInp.Text = "DEL";
             this.Button_DeleteInp.UseVisualStyleBackColor = true;
+            this.Button_DeleteInp.Click += new System.EventHandler(this.Button_DeleteInp_Click);
             // 
             // Button_Equals
             // 
@@ -264,6 +277,7 @@ namespace WinFormsApp2
             this.Button_Equals.TabIndex = 19;
             this.Button_Equals.Text = "=";
             this.Button_Equals.UseVisualStyleBackColor = true;
+            this.Button_Equals.Click += new System.EventHandler(this.Button_Equals_Click);
             // 
             // Form1
             // 
