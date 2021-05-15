@@ -17,24 +17,85 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void Button_0_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void Button_1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void Button_2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void Button_3_Click(object sender, EventArgs e)
         {
 
         }
+        private void Button_4_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_5_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_7_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_8_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_9_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Dot_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Add_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Subtract_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Divide_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Multiply_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_ClearEntry_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_EmptySelection_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_DeleteInp_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Button_Equals_Click(object sender, EventArgs e)
+        {
+
+        }
+          
     }
 }

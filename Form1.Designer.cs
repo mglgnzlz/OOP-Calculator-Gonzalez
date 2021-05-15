@@ -70,6 +70,7 @@ namespace WinFormsApp2
             this.Button_7.TabIndex = 7;
             this.Button_7.Text = "7";
             this.Button_7.UseVisualStyleBackColor = false;
+            this.Button_7.Click += new System.EventHandler(this.Button_7_Click);
             // 
             // Button_8
             // 
@@ -137,6 +138,7 @@ namespace WinFormsApp2
             this.Button_1.TabIndex = 1;
             this.Button_1.Text = "1";
             this.Button_1.UseVisualStyleBackColor = false;
+            this.Button_1.Click += new System.EventHandler(this.Button_1_Click);
             // 
             // Button_2
             // 
