@@ -273,9 +273,11 @@ namespace WinFormsApp2
             // 
             // CalculatorDisplay
             // 
+            this.CalculatorDisplay.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CalculatorDisplay.Location = new System.Drawing.Point(12, 22);
             this.CalculatorDisplay.Multiline = true;
             this.CalculatorDisplay.Name = "CalculatorDisplay";
+            this.CalculatorDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CalculatorDisplay.Size = new System.Drawing.Size(366, 86);
             this.CalculatorDisplay.TabIndex = 20;
             // 
