@@ -40,16 +40,15 @@ namespace WinFormsApp2
             this.Button_2 = new System.Windows.Forms.Button();
             this.Button_3 = new System.Windows.Forms.Button();
             this.Button_0 = new System.Windows.Forms.Button();
-            this.Button_Dot = new System.Windows.Forms.Button();
             this.Button_Add = new System.Windows.Forms.Button();
             this.Button_Subtract = new System.Windows.Forms.Button();
             this.Button_Divide = new System.Windows.Forms.Button();
             this.Button_Multiply = new System.Windows.Forms.Button();
             this.Button_ClearEntry = new System.Windows.Forms.Button();
-            this.Button_EmptySelection = new System.Windows.Forms.Button();
             this.Button_DeleteInp = new System.Windows.Forms.Button();
             this.Button_Equals = new System.Windows.Forms.Button();
             this.CalculatorDisplay = new System.Windows.Forms.TextBox();
+            this.Button_00 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_7
@@ -172,17 +171,6 @@ namespace WinFormsApp2
             this.Button_0.UseVisualStyleBackColor = true;
             this.Button_0.Click += new System.EventHandler(this.Button_0_Click);
             // 
-            // Button_Dot
-            // 
-            this.Button_Dot.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_Dot.Location = new System.Drawing.Point(143, 349);
-            this.Button_Dot.Name = "Button_Dot";
-            this.Button_Dot.Size = new System.Drawing.Size(59, 68);
-            this.Button_Dot.TabIndex = 11;
-            this.Button_Dot.Text = ".";
-            this.Button_Dot.UseVisualStyleBackColor = true;
-            this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
-            // 
             // Button_Add
             // 
             this.Button_Add.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -238,21 +226,10 @@ namespace WinFormsApp2
             this.Button_ClearEntry.UseVisualStyleBackColor = true;
             this.Button_ClearEntry.Click += new System.EventHandler(this.Button_ClearEntry_Click);
             // 
-            // Button_EmptySelection
-            // 
-            this.Button_EmptySelection.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_EmptySelection.Location = new System.Drawing.Point(283, 201);
-            this.Button_EmptySelection.Name = "Button_EmptySelection";
-            this.Button_EmptySelection.Size = new System.Drawing.Size(95, 68);
-            this.Button_EmptySelection.TabIndex = 17;
-            this.Button_EmptySelection.Text = "E";
-            this.Button_EmptySelection.UseVisualStyleBackColor = true;
-            this.Button_EmptySelection.Click += new System.EventHandler(this.Button_EmptySelection_Click);
-            // 
             // Button_DeleteInp
             // 
             this.Button_DeleteInp.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_DeleteInp.Location = new System.Drawing.Point(283, 275);
+            this.Button_DeleteInp.Location = new System.Drawing.Point(283, 201);
             this.Button_DeleteInp.Name = "Button_DeleteInp";
             this.Button_DeleteInp.Size = new System.Drawing.Size(95, 68);
             this.Button_DeleteInp.TabIndex = 18;
@@ -263,9 +240,9 @@ namespace WinFormsApp2
             // Button_Equals
             // 
             this.Button_Equals.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_Equals.Location = new System.Drawing.Point(283, 349);
+            this.Button_Equals.Location = new System.Drawing.Point(283, 275);
             this.Button_Equals.Name = "Button_Equals";
-            this.Button_Equals.Size = new System.Drawing.Size(95, 68);
+            this.Button_Equals.Size = new System.Drawing.Size(95, 142);
             this.Button_Equals.TabIndex = 19;
             this.Button_Equals.Text = "=";
             this.Button_Equals.UseVisualStyleBackColor = true;
@@ -281,22 +258,32 @@ namespace WinFormsApp2
             this.CalculatorDisplay.Size = new System.Drawing.Size(366, 86);
             this.CalculatorDisplay.TabIndex = 20;
             // 
+            // Button_00
+            // 
+            this.Button_00.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Button_00.Location = new System.Drawing.Point(143, 349);
+            this.Button_00.Name = "Button_00";
+            this.Button_00.Size = new System.Drawing.Size(59, 68);
+            this.Button_00.TabIndex = 21;
+            this.Button_00.Text = "00";
+            this.Button_00.UseVisualStyleBackColor = true;
+            this.Button_00.Click += new System.EventHandler(this.Button_00_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(390, 441);
+            this.Controls.Add(this.Button_00);
             this.Controls.Add(this.CalculatorDisplay);
             this.Controls.Add(this.Button_Equals);
             this.Controls.Add(this.Button_DeleteInp);
-            this.Controls.Add(this.Button_EmptySelection);
             this.Controls.Add(this.Button_ClearEntry);
             this.Controls.Add(this.Button_Multiply);
             this.Controls.Add(this.Button_Divide);
             this.Controls.Add(this.Button_Subtract);
             this.Controls.Add(this.Button_Add);
-            this.Controls.Add(this.Button_Dot);
             this.Controls.Add(this.Button_0);
             this.Controls.Add(this.Button_3);
             this.Controls.Add(this.Button_2);
@@ -326,16 +313,15 @@ namespace WinFormsApp2
         private System.Windows.Forms.Button Button_2;
         private System.Windows.Forms.Button Button_3;
         private System.Windows.Forms.Button Button_0;
-        private System.Windows.Forms.Button Button_Dot;
         private System.Windows.Forms.Button Button_Add;
         private System.Windows.Forms.Button Button_Subtract;
         private System.Windows.Forms.Button Button_Divide;
         private System.Windows.Forms.Button Button_Multiply;
         private System.Windows.Forms.Button Button_ClearEntry;
-        private System.Windows.Forms.Button Button_EmptySelection;
         private System.Windows.Forms.Button Button_DeleteInp;
         private System.Windows.Forms.Button Button_Equals;
         private System.Windows.Forms.TextBox CalculatorDisplay;
+        private System.Windows.Forms.Button Button_00;
     }
 }
 

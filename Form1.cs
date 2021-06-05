@@ -23,6 +23,11 @@ namespace WinFormsApp2
             string NumVal = "0";
             NumberDisp_Func(NumVal);
         }
+        private void Button_00_Click(object sender, EventArgs e)
+        {
+            string NumVal = "00";
+            NumberDisp_Func(NumVal);
+        }
 
         private void Button_1_Click(object sender, EventArgs e)
         {
@@ -75,7 +80,7 @@ namespace WinFormsApp2
         }
         private void Button_Add_Click(object sender, EventArgs e)
         {
-            
+            CalculatorDisplay.Text = CalculatorDisplay.Text + "+";
         }
         private void Button_Subtract_Click(object sender, EventArgs e)
         {
@@ -123,5 +128,7 @@ namespace WinFormsApp2
               
             
         }
+
+   
     }
 }
