@@ -179,7 +179,7 @@ namespace WinFormsApp2
             this.Button_Dot.Name = "Button_Dot";
             this.Button_Dot.Size = new System.Drawing.Size(59, 68);
             this.Button_Dot.TabIndex = 11;
-            this.Button_Dot.Text = ",";
+            this.Button_Dot.Text = ".";
             this.Button_Dot.UseVisualStyleBackColor = true;
             this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
             // 

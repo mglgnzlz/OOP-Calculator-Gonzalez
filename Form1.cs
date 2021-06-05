@@ -17,24 +17,27 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
+
         private void Button_0_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 0;
+            string Num1 = "0";
+            NumberDisp_Func(Num1);
         }
 
         private void Button_1_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 1;
+            string Num1 = "1";
+            NumberDisp_Func(Num1);
         }
-
         private void Button_2_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 2; 
+            string Num1 = "2";
+            NumberDisp_Func(Num1);
         }
-
         private void Button_3_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 3;
+            string Num1 = "3";
+            NumberDisp_Func(Num1);
         }
         private void Button_4_Click(object sender, EventArgs e)
         {
@@ -66,7 +69,7 @@ namespace WinFormsApp2
         }
         private void Button_Add_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + "+";
+            
         }
         private void Button_Subtract_Click(object sender, EventArgs e)
         {
@@ -97,5 +100,22 @@ namespace WinFormsApp2
 
         }
 
+        private string NumberDisp_Func(string Num1)
+        {
+            if(CalculatorDisplay.Text == "" && CalculatorDisplay.Text != null)
+            {
+                CalculatorDisplay.Text = Num1;
+                string DisplayNum = CalculatorDisplay.Text;
+                return DisplayNum;
+            }
+            else
+            {
+                CalculatorDisplay.Text += Num1;
+                string DisplayNum = CalculatorDisplay.Text;
+                return DisplayNum;
+            }
+              
+            
+        }
     }
 }
