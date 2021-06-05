@@ -17,6 +17,10 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
+        float Num_Input1,
+              Result_Output;
+        byte Op_Symbol = 0;
+
 
         private void Button_0_Click(object sender, EventArgs e)
         {
@@ -73,34 +77,38 @@ namespace WinFormsApp2
         {
             string NumVal = "9";
             NumberDisp_Func(NumVal);
+            
         }
-        private void Button_Dot_Click(object sender, EventArgs e)
-        {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + ".";
-        }
+
         private void Button_Add_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + "+";
+            Num_Input1 = float.Parse(CalculatorDisplay.Text);
+            Op_Symbol = 1;
+            CalculatorDisplay.Clear();
         }
         private void Button_Subtract_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + "-";
+            Num_Input1 = float.Parse(CalculatorDisplay.Text);
+            Op_Symbol = 2;
+            CalculatorDisplay.Clear();
         }
         private void Button_Divide_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + "/";
+            Num_Input1 = float.Parse(CalculatorDisplay.Text);
+            Op_Symbol = 3;
+            CalculatorDisplay.Clear();
         }
         private void Button_Multiply_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + "x";
+            Num_Input1 = float.Parse(CalculatorDisplay.Text);
+            Op_Symbol = 4;
+            CalculatorDisplay.Clear();
         }
         private void Button_ClearEntry_Click(object sender, EventArgs e)
         {
-
-        }
-        private void Button_EmptySelection_Click(object sender, EventArgs e)
-        {
-
+            CalculatorDisplay.Clear();
+            Num_Input1 = 0;
+            Op_Symbol = 0;
         }
         private void Button_DeleteInp_Click(object sender, EventArgs e)
         {
@@ -108,8 +116,37 @@ namespace WinFormsApp2
         }
         private void Button_Equals_Click(object sender, EventArgs e)
         {
-
+            ComputeInput(Op_Symbol);
         }
+
+
+
+        private void ComputeInput(int Op_Symbol)
+        {
+            switch(Op_Symbol)
+            {
+                case 1:
+                    Result_Output = Num_Input1 + float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = Result_Output.ToString();
+                    break;
+
+                case 2:
+                    Result_Output = Num_Input1 - float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = Result_Output.ToString();
+                    break;
+                case 3:
+                    Result_Output = Num_Input1 / float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = Result_Output.ToString();
+                    break;
+                case 4:
+                    Result_Output = Num_Input1 * float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = Result_Output.ToString();
+                    break;
+                default:
+                break;
+            }
+        }
+
 
         private string NumberDisp_Func(string NumVal)
         {

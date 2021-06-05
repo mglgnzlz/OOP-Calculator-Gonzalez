@@ -49,6 +49,7 @@ namespace WinFormsApp2
             this.Button_Equals = new System.Windows.Forms.Button();
             this.CalculatorDisplay = new System.Windows.Forms.TextBox();
             this.Button_00 = new System.Windows.Forms.Button();
+            this.Button_Dot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_7
@@ -240,9 +241,9 @@ namespace WinFormsApp2
             // Button_Equals
             // 
             this.Button_Equals.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Button_Equals.Location = new System.Drawing.Point(283, 275);
+            this.Button_Equals.Location = new System.Drawing.Point(283, 349);
             this.Button_Equals.Name = "Button_Equals";
-            this.Button_Equals.Size = new System.Drawing.Size(95, 142);
+            this.Button_Equals.Size = new System.Drawing.Size(95, 68);
             this.Button_Equals.TabIndex = 19;
             this.Button_Equals.Text = "=";
             this.Button_Equals.UseVisualStyleBackColor = true;
@@ -269,12 +270,23 @@ namespace WinFormsApp2
             this.Button_00.UseVisualStyleBackColor = true;
             this.Button_00.Click += new System.EventHandler(this.Button_00_Click);
             // 
+            // Button_Dot
+            // 
+            this.Button_Dot.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Button_Dot.Location = new System.Drawing.Point(283, 275);
+            this.Button_Dot.Name = "Button_Dot";
+            this.Button_Dot.Size = new System.Drawing.Size(95, 68);
+            this.Button_Dot.TabIndex = 22;
+            this.Button_Dot.Text = ".";
+            this.Button_Dot.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(390, 441);
+            this.Controls.Add(this.Button_Dot);
             this.Controls.Add(this.Button_00);
             this.Controls.Add(this.CalculatorDisplay);
             this.Controls.Add(this.Button_Equals);
@@ -322,6 +334,7 @@ namespace WinFormsApp2
         private System.Windows.Forms.Button Button_Equals;
         private System.Windows.Forms.TextBox CalculatorDisplay;
         private System.Windows.Forms.Button Button_00;
+        private System.Windows.Forms.Button Button_Dot;
     }
 }
 
