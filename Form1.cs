@@ -150,7 +150,7 @@ namespace WinFormsApp2
 
         private string NumberDisp_Func(string NumVal)
         {
-            if(CalculatorDisplay.Text == "" && CalculatorDisplay.Text != null)
+            if(CalculatorDisplay.Text == "")
             {
                 CalculatorDisplay.Text = NumVal;
                 string DisplayNum = CalculatorDisplay.Text;
