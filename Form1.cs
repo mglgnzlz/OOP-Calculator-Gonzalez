@@ -20,48 +20,54 @@ namespace WinFormsApp2
 
         private void Button_0_Click(object sender, EventArgs e)
         {
-            string Num1 = "0";
-            NumberDisp_Func(Num1);
+            string NumVal = "0";
+            NumberDisp_Func(NumVal);
         }
 
         private void Button_1_Click(object sender, EventArgs e)
         {
-            string Num1 = "1";
-            NumberDisp_Func(Num1);
+            string NumVal = "1";
+            NumberDisp_Func(NumVal);
         }
         private void Button_2_Click(object sender, EventArgs e)
         {
-            string Num1 = "2";
-            NumberDisp_Func(Num1);
+            string NumVal = "2";
+            NumberDisp_Func(NumVal);
         }
         private void Button_3_Click(object sender, EventArgs e)
         {
-            string Num1 = "3";
-            NumberDisp_Func(Num1);
+            string NumVal = "3";
+            NumberDisp_Func(NumVal);
         }
         private void Button_4_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 4;
+            string NumVal = "4";
+            NumberDisp_Func(NumVal);
         }
         private void Button_5_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 5;
+            string NumVal = "5";
+            NumberDisp_Func(NumVal);
         }
         private void Button_6_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 6;
+            string NumVal = "6";
+            NumberDisp_Func(NumVal);
         }
         private void Button_7_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 7;
+            string NumVal = "7";
+            NumberDisp_Func(NumVal);
         }
         private void Button_8_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 8;
+            string NumVal = "8";
+            NumberDisp_Func(NumVal);
         }
         private void Button_9_Click(object sender, EventArgs e)
         {
-            CalculatorDisplay.Text = CalculatorDisplay.Text + 9;
+            string NumVal = "9";
+            NumberDisp_Func(NumVal);
         }
         private void Button_Dot_Click(object sender, EventArgs e)
         {
@@ -100,17 +106,17 @@ namespace WinFormsApp2
 
         }
 
-        private string NumberDisp_Func(string Num1)
+        private string NumberDisp_Func(string NumVal)
         {
             if(CalculatorDisplay.Text == "" && CalculatorDisplay.Text != null)
             {
-                CalculatorDisplay.Text = Num1;
+                CalculatorDisplay.Text = NumVal;
                 string DisplayNum = CalculatorDisplay.Text;
                 return DisplayNum;
             }
             else
             {
-                CalculatorDisplay.Text += Num1;
+                CalculatorDisplay.Text += NumVal;
                 string DisplayNum = CalculatorDisplay.Text;
                 return DisplayNum;
             }
