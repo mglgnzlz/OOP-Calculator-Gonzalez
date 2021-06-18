@@ -112,7 +112,11 @@ namespace WinFormsApp2
         }
         private void Button_DeleteInp_Click(object sender, EventArgs e)
         {
-
+         
+        }
+        private void Button_Dot_Click(object sender, EventArgs e)
+        {
+            CalculatorDisplay.Text += ".";
         }
         private void Button_Equals_Click(object sender, EventArgs e)
         {
@@ -147,6 +151,7 @@ namespace WinFormsApp2
             }
         }
 
+       
 
         private string NumberDisp_Func(string NumVal)
         {
@@ -165,7 +170,6 @@ namespace WinFormsApp2
               
             
         }
-
    
     }
 }

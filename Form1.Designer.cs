@@ -279,6 +279,7 @@ namespace WinFormsApp2
             this.Button_Dot.TabIndex = 22;
             this.Button_Dot.Text = ".";
             this.Button_Dot.UseVisualStyleBackColor = true;
+            this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
             // 
             // Form1
             // 
