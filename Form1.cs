@@ -112,7 +112,7 @@ namespace WinFormsApp2
         }
         private void Button_DeleteInp_Click(object sender, EventArgs e)
         {
-         
+            CalculatorDisplay.Text = CalculatorDisplay.Text.Remove(CalculatorDisplay.Text.Length - 1);
         }
         private void Button_Dot_Click(object sender, EventArgs e)
         {
