@@ -12,15 +12,14 @@ namespace WinFormsApp2
 {
     public partial class Calculator : Form
     {
+        OperatorsClass OpClass = new OperatorsClass();
+
         public Calculator()
         {
             InitializeComponent();
         }
 
-        float Num_Input1,
-              Result_Output;
-        byte Op_Symbol = 0;
-
+        
 
         private void Button_0_Click(object sender, EventArgs e)
         {
@@ -82,33 +81,33 @@ namespace WinFormsApp2
 
         private void Button_Add_Click(object sender, EventArgs e)
         {
-            Num_Input1 = float.Parse(CalculatorDisplay.Text);
-            Op_Symbol = 1;
+            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Op_Symbol1 = 1;
             CalculatorDisplay.Clear();
         }
         private void Button_Subtract_Click(object sender, EventArgs e)
         {
-            Num_Input1 = float.Parse(CalculatorDisplay.Text);
-            Op_Symbol = 2;
+            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Op_Symbol1 = 2;
             CalculatorDisplay.Clear();
         }
         private void Button_Divide_Click(object sender, EventArgs e)
         {
-            Num_Input1 = float.Parse(CalculatorDisplay.Text);
-            Op_Symbol = 3;
+            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Op_Symbol1 = 3;
             CalculatorDisplay.Clear();
         }
         private void Button_Multiply_Click(object sender, EventArgs e)
         {
-            Num_Input1 = float.Parse(CalculatorDisplay.Text);
-            Op_Symbol = 4;
+            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Op_Symbol1 = 4;
             CalculatorDisplay.Clear();
         }
         private void Button_ClearEntry_Click(object sender, EventArgs e)
         {
             CalculatorDisplay.Clear();
-            Num_Input1 = 0;
-            Op_Symbol = 0;
+            OpClass.Num_Input11 = 0;
+            OpClass.Op_Symbol1 = 0;
         }
         private void Button_DeleteInp_Click(object sender, EventArgs e)
         {
@@ -127,7 +126,7 @@ namespace WinFormsApp2
         }
         private void Button_Equals_Click(object sender, EventArgs e)
         {
-            ComputeInput(Op_Symbol);
+            ComputeInput(OpClass.Op_Symbol1);
         }
 
 
@@ -137,21 +136,21 @@ namespace WinFormsApp2
             switch(Op_Symbol)
             {
                 case 1:
-                    Result_Output = Num_Input1 + float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = Result_Output.ToString();
+                    OpClass.Result_Output1 = OpClass.Num_Input11 + float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
 
                 case 2:
-                    Result_Output = Num_Input1 - float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = Result_Output.ToString();
+                    OpClass.Result_Output1 = OpClass.Num_Input11 - float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
                 case 3:
-                    Result_Output = Num_Input1 / float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = Result_Output.ToString();
+                    OpClass.Result_Output1 = OpClass.Num_Input11 / float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
                 case 4:
-                    Result_Output = Num_Input1 * float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = Result_Output.ToString();
+                    OpClass.Result_Output1 = OpClass.Num_Input11 * float.Parse(CalculatorDisplay.Text);
+                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
                 default:
                 break;
