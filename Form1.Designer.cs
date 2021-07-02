@@ -1,7 +1,7 @@
 ﻿
 namespace WinFormsApp2
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace WinFormsApp2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.Button_7 = new System.Windows.Forms.Button();
             this.Button_8 = new System.Windows.Forms.Button();
             this.Button_9 = new System.Windows.Forms.Button();
@@ -281,7 +281,7 @@ namespace WinFormsApp2
             this.Button_Dot.UseVisualStyleBackColor = true;
             this.Button_Dot.Click += new System.EventHandler(this.Button_Dot_Click);
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -308,7 +308,8 @@ namespace WinFormsApp2
             this.Controls.Add(this.Button_8);
             this.Controls.Add(this.Button_7);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "Calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
