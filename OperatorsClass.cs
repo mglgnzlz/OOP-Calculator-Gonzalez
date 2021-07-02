@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WinFormsApp2
 {
-    class Class1
+    class OperatorsClass
     {
     }
 }
