@@ -19,7 +19,7 @@ namespace WinFormsApp2
 
         float Num_Input1,
               Result_Output;
-        byte Op_Symbol = 0;
+        byte  Op_Symbol = 0;
 
 
         private void Button_0_Click(object sender, EventArgs e)
@@ -130,17 +130,19 @@ namespace WinFormsApp2
             ComputeInput(Op_Symbol);
         }
 
-
-
+        ////////////// FUNCTIONS SECTION ///////////////////
+  
         private void ComputeInput(int Op_Symbol)
         {
+            //Switch cases based on Op_Symbol which corresponds with a value for each operation//
             switch(Op_Symbol)
             {
+                //Parses the second number, then conducts operations based from the cases//
+                //After addition result output is converted to a string//
                 case 1:
                     Result_Output = Num_Input1 + float.Parse(CalculatorDisplay.Text);
                     CalculatorDisplay.Text = Result_Output.ToString();
                     break;
-
                 case 2:
                     Result_Output = Num_Input1 - float.Parse(CalculatorDisplay.Text);
                     CalculatorDisplay.Text = Result_Output.ToString();
@@ -158,10 +160,10 @@ namespace WinFormsApp2
             }
         }
 
-       
-
         private string NumberDisp_Func(string NumVal)
         {
+            // if the textbox is blank, the function inputs the NumVal based on the value of the button that is clicked.//
+            // if the textbox is NOT blank, the function appends a value of NumVal based on the value of the button that is clicked.//
             if(CalculatorDisplay.Text == "")
             {
                 CalculatorDisplay.Text = NumVal;
@@ -173,10 +175,7 @@ namespace WinFormsApp2
                 CalculatorDisplay.Text += NumVal;
                 string DisplayNum = CalculatorDisplay.Text;
                 return DisplayNum;
-            }
-              
-            
+            } 
         }
-   
     }
 }
