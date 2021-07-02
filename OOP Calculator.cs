@@ -21,59 +21,81 @@ namespace WinFormsApp2
 
         private void Button_0_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "0";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_00_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "00";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
 
         private void Button_1_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "1";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_2_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "2";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_3_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "3";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_4_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "4";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_5_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "5";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_6_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "6";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_7_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "7";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_8_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "8";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
         private void Button_9_Click(object sender, EventArgs e)
         {
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
             string NumVal = "9";
-            NumberDisp_Func(NumVal);
+            OpClass.NumberDisp_Func(NumVal);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
 
         private void Button_Add_Click(object sender, EventArgs e)
@@ -123,50 +145,9 @@ namespace WinFormsApp2
         }
         private void Button_Equals_Click(object sender, EventArgs e)
         {
-            ComputeInput(OpClass.Op_Symbol1);
-        }
-
-        private void ComputeInput(int Op_Symbol)
-        {
-            switch (Op_Symbol)
-            {
-                case 1:
-                    OpClass.Result_Output1 = OpClass.Num_Inp + float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
-                    break;
-
-                case 2:
-                    OpClass.Result_Output1 = OpClass.Num_Inp - float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
-                    break;
-                case 3:
-                    OpClass.Result_Output1 = OpClass.Num_Inp / float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
-                    break;
-                case 4:
-                    OpClass.Result_Output1 = OpClass.Num_Inp * float.Parse(CalculatorDisplay.Text);
-                    CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        public string NumberDisp_Func(string NumVal)
-        {
-            if (CalculatorDisplay.Text == "")
-            {
-                CalculatorDisplay.Text = NumVal;
-                string DisplayNum = CalculatorDisplay.Text;
-                return DisplayNum;
-            }
-            else
-            {
-                CalculatorDisplay.Text += NumVal;
-                string DisplayNum = CalculatorDisplay.Text;
-                return DisplayNum;
-            }
-
+            OpClass.CalcDisp1 = CalculatorDisplay.Text;
+            OpClass.ComputeInput(OpClass.Op_Symbol1);
+            CalculatorDisplay.Text = OpClass.CalcDisp1;
         }
 
     }
