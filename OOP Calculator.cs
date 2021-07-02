@@ -19,8 +19,6 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-        
-
         private void Button_0_Click(object sender, EventArgs e)
         {
             string NumVal = "0";
@@ -76,37 +74,36 @@ namespace WinFormsApp2
         {
             string NumVal = "9";
             NumberDisp_Func(NumVal);
-            
         }
 
         private void Button_Add_Click(object sender, EventArgs e)
         {
-            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Num_Inp = float.Parse(CalculatorDisplay.Text);
             OpClass.Op_Symbol1 = 1;
             CalculatorDisplay.Clear();
         }
         private void Button_Subtract_Click(object sender, EventArgs e)
         {
-            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Num_Inp = float.Parse(CalculatorDisplay.Text);
             OpClass.Op_Symbol1 = 2;
             CalculatorDisplay.Clear();
         }
         private void Button_Divide_Click(object sender, EventArgs e)
         {
-            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Num_Inp = float.Parse(CalculatorDisplay.Text);
             OpClass.Op_Symbol1 = 3;
             CalculatorDisplay.Clear();
         }
         private void Button_Multiply_Click(object sender, EventArgs e)
         {
-            OpClass.Num_Input11 = float.Parse(CalculatorDisplay.Text);
+            OpClass.Num_Inp = float.Parse(CalculatorDisplay.Text);
             OpClass.Op_Symbol1 = 4;
             CalculatorDisplay.Clear();
         }
         private void Button_ClearEntry_Click(object sender, EventArgs e)
         {
             CalculatorDisplay.Clear();
-            OpClass.Num_Input11 = 0;
+            OpClass.Num_Inp = 0;
             OpClass.Op_Symbol1 = 0;
         }
         private void Button_DeleteInp_Click(object sender, EventArgs e)
@@ -129,39 +126,35 @@ namespace WinFormsApp2
             ComputeInput(OpClass.Op_Symbol1);
         }
 
-
-
         private void ComputeInput(int Op_Symbol)
         {
-            switch(Op_Symbol)
+            switch (Op_Symbol)
             {
                 case 1:
-                    OpClass.Result_Output1 = OpClass.Num_Input11 + float.Parse(CalculatorDisplay.Text);
+                    OpClass.Result_Output1 = OpClass.Num_Inp + float.Parse(CalculatorDisplay.Text);
                     CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
 
                 case 2:
-                    OpClass.Result_Output1 = OpClass.Num_Input11 - float.Parse(CalculatorDisplay.Text);
+                    OpClass.Result_Output1 = OpClass.Num_Inp - float.Parse(CalculatorDisplay.Text);
                     CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
                 case 3:
-                    OpClass.Result_Output1 = OpClass.Num_Input11 / float.Parse(CalculatorDisplay.Text);
+                    OpClass.Result_Output1 = OpClass.Num_Inp / float.Parse(CalculatorDisplay.Text);
                     CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
                 case 4:
-                    OpClass.Result_Output1 = OpClass.Num_Input11 * float.Parse(CalculatorDisplay.Text);
+                    OpClass.Result_Output1 = OpClass.Num_Inp * float.Parse(CalculatorDisplay.Text);
                     CalculatorDisplay.Text = OpClass.Result_Output1.ToString();
                     break;
                 default:
-                break;
+                    break;
             }
         }
 
-       
-
-        private string NumberDisp_Func(string NumVal)
+        public string NumberDisp_Func(string NumVal)
         {
-            if(CalculatorDisplay.Text == "")
+            if (CalculatorDisplay.Text == "")
             {
                 CalculatorDisplay.Text = NumVal;
                 string DisplayNum = CalculatorDisplay.Text;
@@ -173,9 +166,8 @@ namespace WinFormsApp2
                 string DisplayNum = CalculatorDisplay.Text;
                 return DisplayNum;
             }
-              
-            
+
         }
-   
+
     }
 }
